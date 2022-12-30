@@ -2,12 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://zacbakerr.github.io/zacsite/posts/bitcoin/</loc>
+    <lastmod>2022-11-09T18:52:32-04:00</lastmod>
+  </url><url>
+    <loc>http://zacbakerr.github.io/zacsite/posts/</loc>
+    <lastmod>2022-11-09T18:52:32-04:00</lastmod>
+  </url><url>
+    <loc>http://zacbakerr.github.io/zacsite/</loc>
+    <lastmod>2022-11-09T18:52:32-04:00</lastmod>
+  </url><url>
+    <loc>http://zacbakerr.github.io/zacsite/posts/zethernet/</loc>
+    <lastmod>2022-06-18T18:52:32-04:00</lastmod>
+  </url><url>
+    <loc>http://zacbakerr.github.io/zacsite/posts/babble/</loc>
+    <lastmod>2022-06-12T18:52:32-04:00</lastmod>
+  </url><url>
+    <loc>http://zacbakerr.github.io/zacsite/posts/encompas/</loc>
+    <lastmod>2022-04-17T18:34:55-04:00</lastmod>
+  </url><url>
+    <loc>http://zacbakerr.github.io/zacsite/posts/lyme-disease/</loc>
+    <lastmod>2020-12-18T21:25:32-04:00</lastmod>
+  </url><url>
+    <loc>http://zacbakerr.github.io/zacsite/404/</loc>
+  </url><url>
     <loc>http://zacbakerr.github.io/zacsite/categories/</loc>
   </url><url>
+    <loc>http://zacbakerr.github.io/zacsite/contact/</loc>
+  </url><url>
+    <loc>http://zacbakerr.github.io/zacsite/resume/</loc>
+  </url><url>
     <loc>http://zacbakerr.github.io/zacsite/tags/</loc>
-  </url><url>
-    <loc>http://zacbakerr.github.io/zacsite/</loc>
-  </url><url>
-    <loc>http://zacbakerr.github.io/zacsite/</loc>
   </url>
 </urlset>
