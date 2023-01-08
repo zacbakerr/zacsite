@@ -7,6 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://zacbakerr.github.io/zacsite/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Library of Babble</title>
+      <link>http://zacbakerr.github.io/zacsite/babble/</link>
+      <pubDate>Sun, 12 Jun 2022 18:52:32 -0400</pubDate>
+      
+      <guid>http://zacbakerr.github.io/zacsite/babble/</guid>
+      <description>&lt;!DOCTYPE html&gt; Library of Babble The Library of Babble &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;The Library of Babble contains everything that has been written, will be written, and could be written. Well, at least things with a length of less than 856. The possible characters are the lowercase alphabet, the comma, the period, and the space. So how many books are there in this library? Well with 29 possible characters and ~855 characters in one book, there are 29^855 books.</description>
+    </item>
+    
+    <item>
+      <title>The Effect of Location on Number of Lyme Disease Cases</title>
+      <link>http://zacbakerr.github.io/zacsite/lyme-disease/</link>
+      <pubDate>Fri, 18 Dec 2020 21:25:32 -0400</pubDate>
+      
+      <guid>http://zacbakerr.github.io/zacsite/lyme-disease/</guid>
+      <description>The Effect of Location on Number of Lyme Disease Cases By Zachary R. Baker and Srishanth Tangedipalli Thomas Jefferson High School for Science and Technology Dr. Kathleen Morrow, Ms. Erinn Harris, and Ms. Julia Litchford
+Introduction Lyme Disease has had over 25,000 cases every year in the US since 2007 (Monaghan et al, 2015). It is a vector-borne disease, which means that it is transmitted to humans and other animals by blood-feeding animals, such as ticks or mosquitos.</description>
+    </item>
+    
+    <item>
       <title>2023 Goals</title>
       <link>http://zacbakerr.github.io/zacsite/2023goals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

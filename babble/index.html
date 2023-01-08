@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang=""><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Library of Babble</title>
+    <meta name="description" content="A simple monospaced resume theme for Hugo.">
+    <meta name="author" content='Zachary Baker'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    
+    <link rel="stylesheet" href="/zacsite/sass/researcher.min.css">
+
+    
+        <link rel="icon" type="image/ico" href="http://zacbakerr.github.io/zacsite/favicon.ico">
+    
+
+    
+        
+    
+
+    
+</head>
+
+    <body><div class="container mt-5">
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="http://zacbakerr.github.io/zacsite/" title="Zachary Baker">
+          
+          Zachary Baker
+        </a>
+        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+            
+                
+                
+                    <a class="nav-item nav-link" href="/zacsite/" title="Home">
+                        Home
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/zacsite/contact/" title="Contact">
+                        Contact
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/zacsite/readinglog/" title="Reading Log">
+                        Reading Log
+                    </a>
+                    
+                
+            
+        </div>
+    </nav>
+</div>
+<hr>
+<div id="content">
+<div class="container">
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>Library of Babble</title>
+    </head>
+    <body>
+            <h1>The Library of Babble</h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;The Library of Babble contains everything that has been written, will be written, and could be written. Well, at least things with a length of less than 856. The possible characters are the lowercase alphabet, the comma, the period, and the space. So how many books are there in this library? Well with 29 possible characters and ~855 characters in one book, there are 29^855 books.
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;This is about 1,170 decimal places more than the number of atoms in the universe. So yeah, there are a lot of combinations. How exactly was this done? Well, when searching the library, the user makes a variety of decisions including:</p>
+            <ol>
+                <li>Which galaxy in the universe to visit</li>
+                <li>Which solar system in that galaxy they would like to go to</li>
+                <li>What planet they would like to land on</li>
+                <li>Which library they wish to explore</li>
+                <li>What section of the library they would like to venture into</li>
+                <li>Which shelf piques their interest</li>
+                <li>What series to investigate</li>
+                <li>And ultimately, which book to read</li>
+            </ol>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Each decision comes in the form of 20 randomly chosen characters, although users are encouraged to enter non-random inputs for each step of the way. All of these inputs are joined and convereted to binary. Then a series of bitwise operations are preformed on the binary string. It is then fed through the <a href="https://en.wikipedia.org/wiki/Halton_sequence">Halton Sequence</a>, converted back to binary, then to decimal (in different sized chunks), and then convereted to charecters using the <a href="https://en.wikipedia.org/wiki/List_of_Unicode_characters">Unicode Standard</a>.<p>
+                    <center>
+            <form id="journey">
+                <h1>Begin Your Journey</h1>
+                <p>Here you are free to search the vast universe. You must enter 20 charecters (lowercase alphabet and spaces avalibe) or choose to venture into the unknown with randomization.</p>
+                <br>
+                <input type="text" id="galaxy" minlength="20" maxlength="20" placeholder="Enter a galaxy..." style="width:200px;">
+                <input type="text" id="solarSystem" minlength="20" maxlength="20" placeholder="Enter a solar system..." style="width:200px; margin-left:20px;">
+                <br>
+                <br>
+                <button onclick="randomize('galaxy')" style="width: 200px">Randomize galaxy</button>
+                <button onclick="randomize('solarSystem')" style="width: 200px; margin-left:20px">Randomize solar system</button>
+                <br>
+                <br>
+                <br>
+                <input type="text" id="planet" minlength="20" maxlength="20" placeholder="Enter a planet..." style="width:200px">
+                <input type="text" id="library" minlength="20" maxlength="20" placeholder="Enter a library..." style="width:200px; margin-left:20px">
+                <br>
+                <br>  
+                <button onclick="randomize('planet')" style="width:200px">Randomize planet</button>
+                <button onclick="randomize('library')" style="width:200px; margin-left:20px">Randomize library</button>
+                <br>
+                <br>
+                <br>
+                <input type="text" id="section" minlength="20" maxlength="20" placeholder="Enter a section..." style="width:200px">
+                <input type="text" id="shelf" minlength="20" maxlength="20" placeholder="Enter a shelf..." style="width:200px; margin-left:20px">
+                <br>
+                <br>
+                <button onclick="randomize('section')" style="width:200px">Randomize section</button>
+                <button onclick="randomize('shelf')" style="width:200px; margin-left:20px">Randomize shelf</button>
+                <br>
+                <br>
+                <br>
+                <input type="text" id="series" minlength="20" maxlength="20" placeholder="Enter a series..." style="width:200px">
+                <input type="text" id="book" minlength="20" maxlength="20" placeholder="Enter a book..." style="width:200px; margin-left:20px">
+                <br>
+                <br>
+                <button onclick="randomize('series')" style="width:200px">Randomize series</button>
+                <button onclick="randomize('book')" style="width:200px; margin-left:20px">Randomize book</button>
+                <br>
+                <br>
+                <br>
+                <button onclick="randomizeAll()" style="font-size: 20px">Randomize All</button>
+                <br>
+                <br>
+                <br>
+                <button onclick="mapInputToPage(true)" style="font-size: 25px">Submit</button>
+            </form>
+            <div id="bookOutput">
+                <h1 id="title"></h1>
+                <p id="output"></p>
+                <br>
+                <button onclick="swap()">Return to search</button>
+                <button onclick="mapInputToPage(false)">Visit a random book</button>
+            </div>
+        </center>
+    </body>
+    <script type="text/javascript">
+        document.getElementById("bookOutput").style.display = "none";
+        var form = document.getElementById("journey");
+        function handleForm(event) { event.preventDefault(); } 
+        form.addEventListener('submit', handleForm);
+        function halton(b) {
+            let n = 0
+            let d = 1
+            while (true) {
+                x = d - n
+                if (x == 1) {
+                    n = 1
+                    d *= b
+                } else {
+                    y = Math.floor(d / b)
+                    while (x <= y) {
+                        y = Math.floor(y / b)
+                    }
+                    n = (b + 1) * y - x
+                }
+                return (n / d)
+            }
+        }
+        function makeid(length) {
+            var result           = '';
+            var characters       = 'abcdefghijklmnopqrstuvwxyz ';
+            var charactersLength = characters.length;
+            for ( var i = 0; i < length; i++ ) {
+            result += characters.charAt(Math.floor(Math.random() * 
+        charactersLength));
+        }
+        return result;
+        }
+        function swap() {
+            var x = document.getElementById("journey");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                document.getElementById("bookOutput").style.display = "none";
+            } else {
+                x.style.display = "none";
+                document.getElementById("bookOutput").style.display = "block";
+            }
+        }
+        function randomize(inputId) {
+            document.getElementById(inputId).setAttribute('value', makeid(20));
+        }
+        function randomizeAll() {
+            document.getElementById('galaxy').setAttribute('value', makeid(20));
+            document.getElementById('solarSystem').setAttribute('value', makeid(20));
+            document.getElementById('planet').setAttribute('value', makeid(20));
+            document.getElementById('library').setAttribute('value', makeid(20));
+            document.getElementById('section').setAttribute('value', makeid(20));
+            document.getElementById('shelf').setAttribute('value', makeid(20));
+            document.getElementById('series').setAttribute('value', makeid(20));
+            document.getElementById('book').setAttribute('value', makeid(20));
+        }
+        input1 = makeid(20);
+        input2 = makeid(20);
+        input3 = makeid(20);
+        input4 = makeid(20);
+        input5 = makeid(20);
+        input6 = makeid(20);
+        input7 = makeid(20);
+        input8 = makeid(20);
+        function convert(input) {
+            output = ""
+            for (var i = 0; i < input.length; i++) {
+                if (i == 0 || i == 1)  {
+                    output += ""
+                } else {
+                    output += input[i].charCodeAt(0).toString(2);
+                }
+            }
+            return output
+        }
+        input1 = convert(input1);
+        input2 = convert(input2);
+        input3 = convert(input3);
+        input4 = convert(input4);
+        input5 = convert(input5);
+        input6 = convert(input6);
+        input7 = convert(input7);
+        input8 = convert(input8);
+        input = input1 + input2 + input3 + input4 + input5 + input6 + input7 + input8;
+        function mapInputToPage(swapOrNot) {
+            if (swapOrNot == false) {
+                input1 = makeid(20);
+                input2 = makeid(20);
+                input3 = makeid(20);
+                input4 = makeid(20);
+                input5 = makeid(20);
+                input6 = makeid(20);
+                input7 = makeid(20);
+                input8 = makeid(20);
+                input1 = convert(input1);
+                input2 = convert(input2);
+                input3 = convert(input3);
+                input4 = convert(input4);
+                input5 = convert(input5);
+                input6 = convert(input6);
+                input7 = convert(input7);
+                input8 = convert(input8);
+                input = input1 + input2 + input3 + input4 + input5 + input6 + input7 + input8;
+            }
+            haltonOuput = "";
+            for (var i = 0; i < input.length; i += 16) {
+                temp = halton(input.substring(i, i + 16));
+                temp = temp.toString().split('e')[0]
+                temp = temp.split('.')
+                temp = temp.join('')
+                if ((temp).length == 15) {
+                    temp = temp + '0'
+                }
+                haltonOuput += temp;
+            }
+            haltonOuput = convert(haltonOuput);
+            pageOutput = "";
+            for (var i = 0; i < haltonOuput.length; i += 7) {
+                temp = haltonOuput.substring(i, i + 7);
+                if (temp[0] == '0') {
+                    temp = '1' + temp.substring(1, 8);
+                }
+                temp = String(parseInt(temp, 2));
+                if (temp == '91') {
+                    temp = '106'
+                } else if (temp == '92') {
+                    temp = '32'
+                } else if (temp == '93') {
+                    temp = '46'
+                } else if (temp == '94') {
+                    temp = '44'
+                } else if (temp == '95') {
+                    temp = '72'
+                } else if (temp == '96') {
+                    temp = '104'
+                } else if (temp == '123') {
+                    temp = '100'
+                } else if (temp == '124') {
+                    temp = '68'
+                } else if (temp == '125') {
+                    temp = '98'
+                } else if (temp == '126') {
+                    temp = '66'
+                }
+                temp = String.fromCharCode(temp);
+                pageOutput += temp;
+            }
+            pageOutput = pageOutput.toLowerCase();
+            document.getElementById('title').innerHTML = pageOutput.substring(0, 21);
+            document.getElementById('output').innerHTML = pageOutput.substring(21);
+            if (swapOrNot === true) {
+                swap()
+            }
+        }
+</script>
+</html>
+</div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    
+    <div class="container text-center">
+        
+            <a href="https://twitter.com/0xzbaker" class="fab fa-twitter fa-1x" title="Twitter"></a>
+        
+            <a href="mailto:zac.r.baker06@gmail.com" class="fas fa-envelope fa-1x" title="E-mail"></a>
+        
+            <a href="https://www.linkedin.com/in/zac-baker-008b361b8/" class="fab fa-linkedin fa-1x" title="Scholar"></a>
+        
+            <a href="https://github.com/zacbakerr" class="fab fa-github fa-1x" title="Github"></a>
+        
+    </div>
+    
+    
+        <div class="container text-center">
+            <a href="https://github.com/ojroques/hugo-researcher" title="232F 8016 CCFD D46D 9AD9  759B 3B6E 97EA 4659 5D76"><small>232F 8016 CCFD D46D 9AD9  759B 3B6E 97EA 4659 5D76</small></a>
+        </div>
+    
+</div>
+</body>
+</html>
